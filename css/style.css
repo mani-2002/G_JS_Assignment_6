@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    width: 100vw;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    background-color: rgb(242, 246, 203);
+    font-weight: bold;
+}
+
+.head {
+    padding-left: 5%;
+    font-size: 2vw;
+}
+
+.binoculars {
+    padding-left: 70%;
+    margin-bottom: 0.5%;
+
+}
+
+.add-user {
+    padding-left: 4%;
+    margin-bottom: 0.5%;
+}
+
+.btn {
+    background: none;
+    border: none;
+}
+
+i {
+    padding: 10px;
+    font-size: 5vh;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+.bottom {
+    width: 100vw;
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    border: 2px solid lightgray;
+}
+
+th {
+    border: 2px solid lightgray;
+    padding: 2vh 5vw;
+    font-size: 3vh;
+}
+
+td {
+    border: 2px solid lightgray;
+    padding: 2vh 5vw;
+    font-size: 3vh;
+}
+
+
+.add-user-form{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-user-form form{
+    border-radius: 15px;
+    background: rgb(211, 208, 208);
+    padding: 1.5rem;
+    width: 40%;
+}
+
+.add-user-form form .t{
+    display: flex;justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    margin: 0.5rem 0;
+}
+.add-user-form form .t i{
+    cursor: pointer;
+}
+.name, .age, .state{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: 0.75rem 0;
+}
+.add-user-form form h2{
+    width: 40%;
+}
+.add-user-form form input{
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding:0 .5rem 0 0 ;
+}
+
+.state select{
+    width: 100%;
+}
+
+.add-user-form form .b{
+    display: flex;
+    justify-content: center;
+}
+.add-user-form form .b button{
+    padding: .25rem .5rem;
+    cursor: pointer;
+    margin: .75rem 0;
+    background: none;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.editBtn {
+    padding: 1vh 2vw;
+    background-color: #0DCAF0;
+    border: none;
+    color: white;
+}
+
+.deleteBtn {
+    padding: 1vh 2vw;
+    background-color: #DC3545;
+    border: none;
+    color: white;
+}
+
+.editBtn:hover {
+    cursor: pointer
+}
+
+.deleteBtn:hover {
+    cursor: pointer
+}
+
+.functions {
+    background-color: lightgray;
+}
+
+.hide-add-user{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show-add-user{
+    opacity: 1;
+    visibility: visible;
+}

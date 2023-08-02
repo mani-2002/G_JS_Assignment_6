@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9e0f22edfb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="top">
+        <div class="head">MOCK API</div>
+        <div class="binoculars"><button class="btn" onclick='fetchUsers()'><i
+                    class="fa-solid fa-binoculars"></i></button></div>
+        <div class="add-user"><button class="btn" onclick='openpopup()'><i class="fa-solid fa-user-plus"></i></button>
+        </div>
+    </div>
+    <div class="bottom">
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Age</th>
+                <th>State</th>
+                <th class="functions">Functions</th>
+            </thead>
+            <tbody id="tbody">
+                <tr></tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="add-user-form hide-add-user" id="add-user-div">
+        <form id="add-user-form">
+            <div class="t">
+
+                <h1>Add User</h1>
+                <i class="fa-solid fa-circle-xmark" onclick="closepopup()"></i>
+            </div>
+            <div class="m">
+                <div class="name">
+
+                    <h2>Name</h2>
+                    <input type="text" required id="new-name">
+                </div>
+                <div class="age">
+
+                    <h2>Age</h2>
+                    <input type="number" required id="new-age">
+                </div>
+                <div class="state">
+
+                    <h2>State</h2>
+                    <select required id="new-state">
+                        <option value="" disabled selected>Select State</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                        <!-- Add more states as needed -->
+                    </select>
+                </div>
+
+            </div>
+            <div class="b">
+                <button>Add User</button>
+            </div>
+        </form>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
